@@ -1,0 +1,331 @@
+{
+    "name":"pandya kshitiz",
+    "Enrolment id":"21it100",
+    "Department":"Information Technology",
+    "result":{
+        "sem2":{
+            "Ce144":{
+                "theory":"AA",
+                "practical":"AA",
+            },
+            "Cl144":{
+                "practical":"AB",
+            },
+            "FS102A":{
+                "Practical":"AA",
+            },
+            "HS205.02 A":{
+                "Practical":"AA",
+            },
+            "MA144":{
+                "Theory":"AB",
+            },
+            "ME144":{
+                "Theory":"AA",
+                "practical":"AA",
+            },
+            "PY144":{
+                "Practical":"AB",
+            },
+            "previous SGPA":"9.90",
+            "current CGPA":"9.67",
+            "current SGPA":"9.66",
+            "no of backlogs":"0",
+        },
+        "sem3":{
+            "Ce244":{
+                "theory":"AA",
+                "practical":"AA",
+            },
+            "Cl244":{
+                "practical":"AB",
+            },
+            "FS202A":{
+               "Practical":"AA",
+            },
+            "HS205.02 A":{
+                "Practical":"AA",
+            },
+            "MA144":{
+                "Theory":"AB",
+            },
+            "ME144":{
+                "Theory":"AA",
+                "practical":"AA",
+            },
+            "PY144":{
+                "Practical":"AB",
+            },
+            "previous SGPA":"9.90",
+            "current CGPA":"9.67",
+            "current SGPA":"9.66",
+            "no of backlogs":"0",
+        },
+        "sem1":{
+            "Ce144":{
+                "theory":"AA",
+                "practical":"AA",
+            },
+            "Cl144":{
+                "practical":"AB",
+            },
+            "FS102A":{
+                "Practical":"AA",
+            },
+            "HS205.02 A":{
+                "Practical":"AA",
+            },
+            "MA144":{
+                "Theory":"AB",
+            },
+            "ME144":{
+                "Theory":"AA",
+                "practical":"AA",
+            },
+            "PY144":{
+                "Practical":"AB",
+            },
+            "previous SGPA":"9.90",
+            "current CGPA":"9.67",
+            "current SGPA":"9.66",
+            "no of backlogs":"0",
+        }
+    },
+    "attendence":{
+        "sem3":{
+            "HS12.02 A":{
+                "theory":"100",
+                "practical":"95"
+            },
+            'IT250':{
+                "theory":"95",
+                "practical":"100",
+            },
+            'IT251':{
+                "theory":"85",
+                "practical":"75",
+            },
+            'IT252':{
+                "theory":"80",
+                "practical":"85",
+            },
+            'IT253':{
+                "practical":"90",
+            },
+            'MA253':{
+                "Theory":"95",
+            },
+            "Average attendence":"87",
+        }
+    },
+    "fees":{
+        "sem3":{
+            "paid":"20000",
+            "pending":"0",
+            "total":"20000",
+        },
+        "sem2":{
+            "paid":"20000",
+            "pending":"0",
+            "total":"20000",
+        },
+        "sem1":{
+            "paid":"20000",
+            "pending":"0",
+            "total":"20000",
+        },
+        "sem4":{
+            "paid":"20000",
+            "pending":"0",
+            "total":"20000",
+        },
+        "sem5":{
+            "paid":"20000",
+            "pending":"0",
+            "total":"20000",
+        },
+        "sem6":{
+            "paid":"10000",
+            "pending":"10000",
+            "total":"20000",
+        },
+        "sem7":{
+            "paid":"20000",
+            "pending":"0",
+            "total":"20000",
+        },
+        "sem8":{
+            "paid":"20000",
+            "pending":"0",
+            "total":"20000",
+        },
+    }
+}
+
+#
+# data={
+#     "name":"hingraj pandya",
+#     "Enrolment id":"21it068",
+#     "Department":"Information Technology",
+#     "result":{
+#         "sem2":{
+#             "Ce144":{
+#                 "theory":"AA",
+#                 "practical":"AA",
+#             },
+#             "Cl144":{
+#                 "practical":"AB",
+#             },
+#             "FS102A":{
+#                 "Practical":"AA",
+#             },
+#             "HS205.02 A":{
+#                 "Practical":"AA",
+#             },
+#             "MA144":{
+#                 "Theory":"AB",
+#             },
+#             "ME144":{
+#                 "Theory":"AA",
+#                 "practical":"AA",
+#             },
+#             "PY144":{
+#                 "Practical":"AB",
+#             },
+#             "previous SGPA":"9.90",
+#             "current CGPA":"9.67",
+#             "current SGPA":"9.66",
+#             "no of backlogs":"0",
+#         },
+#
+#
+#         "sem3":{
+#             "Ce244":{
+#                 "theory":"AA",
+#                 "practical":"AA",
+#             },
+#             "Cl244":{
+#                 "practical":"AB",
+#             },
+#             "FS202A":{
+#                "Practical":"AA",
+#             },
+#             "HS205.02 A":{
+#                 "Practical":"AA",
+#             },
+#             "MA144":{
+#                 "Theory":"AB",
+#             },
+#             "ME144":{
+#                 "Theory":"AA",
+#                 "practical":"AA",
+#             },
+#             "PY144":{
+#                 "Practical":"AB",
+#             },
+#             "previous SGPA":"9.90",
+#             "current CGPA":"9.67",
+#             "current SGPA":"9.66",
+#             "no of backlogs":"0",
+#         },
+#         "sem1":{
+#             "Ce144":{
+#                 "theory":"AA",
+#                 "practical":"AA",
+#             },
+#             "Cl144":{
+#                 "practical":"AB",
+#             },
+#             "FS102A":{
+#                 "Practical":"AA",
+#             },
+#             "HS205.02 A":{
+#                 "Practical":"AA",
+#             },
+#             "MA144":{
+#                 "Theory":"AB",
+#             },
+#             "ME144":{
+#                 "Theory":"AA",
+#                 "practical":"AA",
+#             },
+#             "PY144":{
+#                 "Practical":"AB",
+#             },
+#             "previous SGPA":"9.90",
+#             "current CGPA":"9.67",
+#             "current SGPA":"9.66",
+#             "no of backlogs":"0",
+#         }
+#     },
+#     "attendence":{
+#         "sem3":{
+#             "HS12.02 A":{
+#                 "theory":"100",
+#                 "practical":"95"
+#             },
+#             'IT250':{
+#                 "theory":"95",
+#                 "practical":"100",
+#             },
+#             'IT251':{
+#                 "theory":"85",
+#                 "practical":"75",
+#             },
+#             'IT252':{
+#                 "theory":"80",
+#                 "practical":"85",
+#             },
+#             'IT253':{
+#                 "practical":"90",
+#             },
+#             'MA253':{
+#                 "Theory":"95",
+#             },
+#             "Average attendence":"87",
+#         }
+#     },
+#     "fees":{
+#         "sem3":{
+#             "paid":"20000",
+#             "pending":"0",
+#             "total":"20000",
+#         },
+#         "sem2":{
+#             "paid":"20000",
+#             "pending":"0",
+#             "total":"20000",
+#         },
+#         "sem1":{
+#             "paid":"20000",
+#             "pending":"0",
+#             "total":"20000",
+#         },
+#         "sem4":{
+#             "paid":"20000",
+#             "pending":"0",
+#             "total":"20000",
+#         },
+#         "sem5":{
+#             "paid":"20000",
+#             "pending":"0",
+#             "total":"20000",
+#         },
+#         "sem6":{
+#             "paid":"10000",
+#             "pending":"10000",
+#             "total":"20000",
+#         },
+#         "sem7":{
+#             "paid":"20000",
+#             "pending":"0",
+#             "total":"20000",
+#         },
+#         "sem8":{
+#             "paid":"20000",
+#             "pending":"0",
+#             "total":"20000",
+#         },
+#     }
+# }
+# # student_insert(data)
