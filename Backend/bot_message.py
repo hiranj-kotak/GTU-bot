@@ -1,12 +1,12 @@
-import telepot
-
-def bot_message():
-    token = '5760945632:AAGsu3dZp176RmWuL9cOuXsRVai1rNNjTds' # telegram token
-    receiver_id = 2084389374 # https://api.telegram.org/bot<TOKEN>/getUpdates
+import requests
+tocken = "5760945632:AAGsu3dZp176RmWuL9cOuXsRVai1rNNjTds"
 
 
-    bot = telepot.Bot(token)
 
-    bot.sendMessage(receiver_id, 'This is a automated test message.') # send a activation message to telegram receiver id
+def send_message(chat_ids, text):
+    for chat_id in chat_ids:
+        base_url = f"https://api.telegram.org/bot{tocken}/sendMessage?chat_id={chat_id}&text={text}"
+        requests.get(base_url)
 
-# bot.sendPhoto(receiver_id, photo=open('test_img.png', 'rb')) # send message to telegram
+
+ #https://api.telegram.org/bot/5760945632:AAGsu3dZp176RmWuL9cOuXsRVai1rNNjTds/getUpdates
