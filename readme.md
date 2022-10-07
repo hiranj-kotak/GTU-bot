@@ -1,2 +1,2 @@
 # GTU Bot
-## Database by Jay and Hit
+## Dadabase by Jay and Hit
