@@ -12,19 +12,30 @@ def Search(data):
 
     return "hi"
 def user_insert(data):
+    print(data)
     data1=data['queryResult']['action']
+    ID = data["queryResult"]["parameters"]["ID"]
+    ans=""
     if(data1=="Studentcorner.Studentcorner-custom.Exam-custom.Result-custom.Result-Sem-custom"):
-        ID=data["queryResult"]["parameters"]["ID"]
-        # print(ID)
+        print("if")
         sem=data["queryResult"]["outputContexts"][0]['parameters']["sem.original"]
         # print(sem)
-        student=student_collection.find_one({"Enrolment id":"21it068"}, {"result": 1,"_id": 0})
+        try:
+            student=student_collection.find_one({"Enrolment id":ID}, {"result": 1,"_id": 0})
+            print(student)
+        except:
+            ans = '' + "Dada base System ma nathi"
+            return ans
+        if(student==None):
+            ans = '' + "Dada base System ma nathi"
+            return ans
         string='sem'+sem
         # print(string)
         # print(student)
         # print(student['result'])
-        student=student['result'][string]
         print(student)
+        student=student['result'][string]
+        # print(student)
         ans=""
         for key in student:
             ans+=key+" : "
@@ -36,6 +47,52 @@ def user_insert(data):
                 ans+=student[key]+"\n"
         # print(ans)
         return ans
+    elif(data1=="Studentcorner.Studentcorner-custom-2.Academics-custom.Attendence-custom"):
+        try:
+            student = student_collection.find_one({"Enrolment id": ID}, {"attendence": 1, "_id": 0})
+        except:
+            ans = '' + "Dada base System ma nathi"
+            return ans
+        if (student == None):
+            ans = '' + "Dada base System ma nathi"
+            return ans
+        # print(student)
+
+        student = student['attendence']["sem1"]
+        # print(student)
+        for key in student:
+            ans += key + " : "
+            if type(student[key]) is dict:
+                ans += '\n'
+                for k in student[key]:
+                    ans += '\t' + k + " :" + student[key][k] + "\n"
+            else:
+                ans += student[key] + "\n"
+        # print(ans)
+        return ans
+    elif(data1=="Studentcorner.Studentcorner-custom-3.Fees-custom.Fees-Sem-custom"):
+        sem=data["queryResult"]["outputContexts"][0]['parameters']["sem"]
+        print(sem)
+        try:
+            student = student_collection.find_one({"Enrolment id": ID}, {"fees": 1, "_id": 0})
+            # print(student)
+        except:
+            ans = '' + "Dada base System ma nathi"
+            return ans
+        if (student == None):
+            ans = '' + "Dada base System ma nathi"
+            return ans
+        print(student["fees"])
+        student=student["fees"][sem]
+        print(student)
+        for key in student:
+            ans+=key + ":"+student[key]+"\n"
+        return ans
+    else:
+        ans=''+"Dada base System ma nathi"
+        return ans
+
+
 
 
 
@@ -44,3 +101,6 @@ def user_insert(data):
 # # ({"instituteName": data["instituteName"]}, {"_id": 0})
 
 # safe_string = urllib.quote_plus('string_of_characters_like_these:$#@=?%^Q^$')
+
+
+
