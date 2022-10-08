@@ -37,8 +37,6 @@ When a user first launches our Telegram bot by typing "/start," he or she will b
 5. Attendance: After authenticating the student via an OTP, users will be given access to the Attendance.
 6. Result: Here, the users can see their respective results after getting authenticated by us via OTP
 
-## Roadmap:
-
 ## Tools and technologies
 
 Programming Language: Python
@@ -69,6 +67,3 @@ A Chatbot which can used in any platform such as telegram, slack, messenger, web
 ## Work done till date
 
 Nearly 50% to 60% of the work has been completed. The most important phase, integrating Dialog flow with Telegram, has been completed and tested to make sure everything is working as it should. The bot has been trained to meet the standards to a degree of over 50%. The syllabus for each department is available to the user. Currently connected to MongoDB, the backend server is ready. However, if another database is required, we will switch to it. For user convenience, the admission inquiry is also created.
-
-
-## Screenshots
