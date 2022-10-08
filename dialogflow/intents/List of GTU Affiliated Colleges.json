@@ -1,0 +1,151 @@
+{
+  "id": "ced80b5b-78ab-436b-8642-1ccf1cc3581e",
+  "parentId": "995e8245-3dec-4ff2-9b3c-058cc39d8e5b",
+  "rootParentId": "995e8245-3dec-4ff2-9b3c-058cc39d8e5b",
+  "name": "List of GTU Affiliated Colleges",
+  "auto": true,
+  "contexts": [
+    "Aboutgtu-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Aboutgtu.Aboutgtu-custom",
+      "affectedContexts": [
+        {
+          "name": "ListofGTUAffiliatedColleges-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "text": "B.E",
+                      "callback_data": "B.E"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "M.E",
+                      "text": "M.E"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Diploma Engg",
+                      "text": "Diploma Engg"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "B.Pharm",
+                      "text": "B.Pharm"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "M.Pharm",
+                      "callback_data": "M.Pharm"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Diploma Pharmacy",
+                      "callback_data": "Diploma Pharmacy"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Pharm.D",
+                      "callback_data": "Pharm.D"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Architecture",
+                      "text": "Architecture"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "MBA",
+                      "callback_data": "MBA"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "MBA_Integrated",
+                      "text": "MBA_Integrated"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "MBA_Part Time",
+                      "text": "MBA_Part Time"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "MCA",
+                      "callback_data": "MCA"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "MCA_Integrated",
+                      "callback_data": "MCA_Integrated"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "B.VOC/D.VOC",
+                      "text": "B.VOC/D.VOC"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Hotel Management",
+                      "callback_data": "Hotel Management"
+                    }
+                  ]
+                ]
+              },
+              "text": "List of GTU Affiliated Colleges"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,125 @@
+{
+  "id": "3e8c1906-5668-4001-8b14-e03251499199",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [
+        {
+          "name": "DefaultWelcomeIntent-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Note: Kindly Register (Register for Notification) to Recieve Noification from GTU",
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "text": "Student Corner",
+                      "callback_data": "Student Corner"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Downloads",
+                      "callback_data": "Downloads"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Admission",
+                      "callback_data": "Admission"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Quick Links",
+                      "text": "Quick Links"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "About GTU",
+                      "callback_data": "About GTU"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Contact Us",
+                      "text": "Contact Us"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Register",
+                      "text": "Register for Notification"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Help Centre",
+                      "text": "Help Centre"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "hey ! welcome to GTU  bot"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "gu",
+          "speech": [
+            "હાય!",
+            "નમસ્કાર!",
+            "શુભ દિવસ!",
+            "કેમ છો!"
+          ],
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

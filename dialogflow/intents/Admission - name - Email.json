@@ -1,0 +1,64 @@
+{
+  "id": "2f7fcaa8-a2bc-4c53-9a31-0bbdc3efe4dc",
+  "parentId": "2d67329f-2774-43b1-b009-2e8414240764",
+  "rootParentId": "f3110826-161f-4fb7-af6e-b421474ab480",
+  "name": "Admission - name - Email",
+  "auto": true,
+  "contexts": [
+    "Admission-name-followup",
+    "awating_email"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Admission.Admission-custom.Admission-name-custom",
+      "affectedContexts": [
+        {
+          "name": "Admission-name-Email-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "awaiting_number",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "196e41cb-c11b-457b-b5af-675893d2043b",
+          "name": "email",
+          "required": true,
+          "dataType": "@sys.email",
+          "value": "$email",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Enter your number"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

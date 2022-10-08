@@ -1,0 +1,17 @@
+[
+  {
+    "id": "60efac36-e5ca-4fc9-8534-047cffd29aab",
+    "data": [
+      {
+        "text": "79894964341",
+        "meta": "@sys.percentage",
+        "alias": "percentage",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

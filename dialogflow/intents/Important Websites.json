@@ -1,0 +1,98 @@
+{
+  "id": "a6925215-d2d1-439b-a0ae-e8ada30650d1",
+  "parentId": "dc57babb-7703-47c2-b4de-0f2304b95d80",
+  "rootParentId": "dc57babb-7703-47c2-b4de-0f2304b95d80",
+  "name": "Important Websites",
+  "auto": true,
+  "contexts": [
+    "QuickLink-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "QuickLink.QuickLink-custom-2",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "url": "https://www.ugc.ac.in/",
+                      "text": "UGC"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "https://www.aicte-india.org/",
+                      "text": "AICTE"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "https://dte.gujarat.gov.in/",
+                      "text": "Education Dept. GoG"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "https://www.pci.nic.in/",
+                      "text": "PCI"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "MHRD",
+                      "url": "https://www.education.gov.in/en"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "National Academic Depository",
+                      "url": "https://nad.digilocker.gov.in/"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "DST",
+                      "url": "https://dst.gov.in/"
+                    }
+                  ]
+                ]
+              },
+              "text": "About gtu"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

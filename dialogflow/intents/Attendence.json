@@ -1,0 +1,61 @@
+{
+  "id": "0d247980-87bd-4cb0-8cd3-583d53912dfc",
+  "parentId": "9a4d0879-b691-4cf1-a496-c1c563f8fd29",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Attendence",
+  "auto": true,
+  "contexts": [
+    "Academics-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom-2.Academics-custom",
+      "affectedContexts": [
+        {
+          "name": "Attendence",
+          "lifespan": 5
+        },
+        {
+          "name": "Attendence-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Enter your ID"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

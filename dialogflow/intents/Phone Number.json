@@ -1,0 +1,51 @@
+{
+  "id": "073bfab0-65bb-48b5-83fb-a872b455f9d5",
+  "parentId": "d9d01e15-913a-48d1-bad7-0025c9901dca",
+  "rootParentId": "e8872704-7911-4efe-8d72-75b1d4e69f1e",
+  "name": "Phone Number",
+  "auto": true,
+  "contexts": [
+    "E-MailID-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Admission.Admission-custom.Name-custom.E-MailID-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "893cd5f5-fe63-41e8-ac88-53f0ff1744f4",
+          "name": "percentage",
+          "required": false,
+          "dataType": "@sys.percentage",
+          "value": "$percentage",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,77 @@
+{
+  "id": "a42da657-42d3-42d3-9916-92b64755b23e",
+  "name": "Help Centre",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "HelpCentre-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "\u003cb\u003eINSTRUCTIONS FOR YOUR EASE ACCESS:\n\u003c/b\u003e\n\u003cb\u003eRESULT:\u003c/b\u003e Student Corner -\u003e Exam -\u003e Result\n\n\u003cb\u003eOLD QUESTION PAPERS:\u003c/b\u003e Student Corner -\u003e Exam -\u003e Old Question Papers\n\n\u003cb\u003eTIME TABLE:\u003c/b\u003e Student Corner -\u003e Academics -\u003e Time Table\n\n\u003cb\u003eATTENDENCE:\u003c/b\u003e Student Corner -\u003e Academics -\u003e Attendence\n\n\u003cb\u003eACADEMIC CALENDER:\u003c/b\u003e Student Corner -\u003e Academics -\u003e Academic Calender\n\n\u003cb\u003eLIST OF GTU AFFILIATED COLLEGES:\u003c/b\u003e About GTU -\u003e List of GTU Affiliated Colleges\n\n\u003cb\u003eUNIQUE INITIATIVES:\u003c/b\u003e About GTU -\u003e Unique Initiatives\n\n\n\u003cb\u003e\u003ci\u003eFor contacting us:\u003c/i\u003e\u003c/b\u003e Click on \u003cb\u003eContact Us\u003c/b\u003e\n\n\u003cb\u003e\u003ci\u003eFor Admission related enquiry:\u003c/i\u003e\u003c/b\u003e Click on \u003cb\u003eAdmission\u003c/b\u003e\n\n\u003cb\u003e\u003ci\u003eFor reffering Quick Links:\u003c/i\u003e\u003c/b\u003e Click on \u003cb\u003eQuick Links\u003c/b\u003e",
+              "parse_mode": "html",
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "text": "FLow-chart",
+                      "callback_data": "chart"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": ""
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

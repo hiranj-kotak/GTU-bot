@@ -1,0 +1,21 @@
+[
+  {
+    "id": "d3818020-8ea1-4cb0-9320-fa60ec9ac590",
+    "data": [
+      {
+        "text": "/kt ",
+        "userDefined": false
+      },
+      {
+        "text": "text to be send",
+        "meta": "@sys.any",
+        "alias": "text",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

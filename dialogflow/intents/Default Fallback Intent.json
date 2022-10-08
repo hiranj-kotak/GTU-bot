@@ -1,0 +1,67 @@
+{
+  "id": "2f076d98-7df2-446a-8d06-1ec5c3352d7e",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I didn\u0027t get that. Can you say it again?",
+            "I missed what you said. What was that?",
+            "Sorry, could you say that again?",
+            "Sorry, can you say that again?",
+            "Can you say that again?",
+            "Sorry, I didn\u0027t get that. Can you rephrase?",
+            "Sorry, what was that?",
+            "One more time?",
+            "What was that?",
+            "Say that one more time?",
+            "I didn\u0027t get that. Can you repeat?",
+            "I missed that, say that again?"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "gu",
+          "speech": [
+            "હેં, મને સમજાયું નહીં. શું તમે ફરીથી કહી શકશો?",
+            "તમે જે બોલ્યા, તે મારાથી ચૂકી જવાયું. ફરીથી કહો તો!",
+            "માફ કરશો, પણ તે તમે ફરીથી કહી શકશો?",
+            "માફ કરશો, પણ તે તમે ફરીથી કહી સકશો?",
+            "શું તમે ફરીથી કહી સકશો?",
+            "માફ કરશો, પણ તે મને સમજાયું નહીં.",
+            "માફ કરશો, પણ તમે શું કીધું?",
+            "ફરી એક વાર?",
+            "એ શું હતું?",
+            "પાછું કહી સકશો?",
+            "હેં, મને સમજાયું નહીં.",
+            "મારાથી ચૂકી જવાયું."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

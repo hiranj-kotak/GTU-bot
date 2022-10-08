@@ -1,0 +1,53 @@
+{
+  "id": "82d03aa9-94e6-4625-b20a-b3f68e102d6a",
+  "parentId": "a42da657-42d3-42d3-9916-92b64755b23e",
+  "rootParentId": "a42da657-42d3-42d3-9916-92b64755b23e",
+  "name": "Help Centre - chart",
+  "auto": true,
+  "contexts": [
+    "HelpCentre-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "HelpCentre.HelpCentre-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "document": "https://firebasestorage.googleapis.com/v0/b/firecdn-jay.appspot.com/o/16652133231dgo?alt\u003dmedia\u0026token\u003d70eaa3b1-aba2-4ea9-8459-7f9fc4571f67",
+              "text": "flow- chart"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

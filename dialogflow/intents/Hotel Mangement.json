@@ -1,0 +1,53 @@
+{
+  "id": "eed9a01f-ec6c-43cb-84af-b8f6002e3fcb",
+  "parentId": "ced80b5b-78ab-436b-8642-1ccf1cc3581e",
+  "rootParentId": "995e8245-3dec-4ff2-9b3c-058cc39d8e5b",
+  "name": "Hotel Mangement",
+  "auto": true,
+  "contexts": [
+    "ListofGTUAffiliatedColleges-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Aboutgtu.Aboutgtu-custom.ListofGTUAffiliatedColleges-custom-2",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Hotel Management",
+              "document": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/Hotel%20Management%20Intake%202021-22.pdf"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

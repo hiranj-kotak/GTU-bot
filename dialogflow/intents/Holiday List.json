@@ -1,0 +1,58 @@
+{
+  "id": "677065de-96cb-48c5-a131-b4373b9de538",
+  "parentId": "dc57babb-7703-47c2-b4de-0f2304b95d80",
+  "rootParentId": "dc57babb-7703-47c2-b4de-0f2304b95d80",
+  "name": "Holiday List",
+  "auto": true,
+  "contexts": [
+    "QuickLink-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "QuickLink.QuickLink-custom",
+      "affectedContexts": [
+        {
+          "name": "HolidayList-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Brochure",
+              "document": "http://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/IT/FY%20General%20Information_%20AY%202022-23.pdf"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

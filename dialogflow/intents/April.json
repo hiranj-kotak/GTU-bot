@@ -1,0 +1,53 @@
+{
+  "id": "c154e890-d0d1-4c8e-9d6c-4c7cda6f4df0",
+  "parentId": "dd330fca-22e7-470e-96a1-9a37af76a1f3",
+  "rootParentId": "a6619789-1976-4180-8a73-49592248a8b7",
+  "name": "April",
+  "auto": true,
+  "contexts": [
+    "Newsletters-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Downloads.Downloads-custom.Newsletters-custom-3",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "April",
+              "document": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/18.%20Sarthak%20Newslatter%20Volume%208%20Issue%20%202_compressed_453189.pdf"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

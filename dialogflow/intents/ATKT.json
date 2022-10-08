@@ -1,0 +1,50 @@
+{
+  "id": "d8f889e3-bcb9-4c24-9453-448bde176a63",
+  "name": "ATKT",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Atkt",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "13cc335d-42f3-446c-a970-6f369d0b49f0",
+          "name": "text",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$text",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "hello"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

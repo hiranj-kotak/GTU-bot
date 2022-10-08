@@ -1,0 +1,47 @@
+{
+  "id": "d9c8a095-53b8-468b-912b-e9cb2a0a4e12",
+  "name": "Pending_fee",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Pending.fee",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3ae31282-52cc-4826-993a-c5ed1e453f95",
+          "name": "text",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$text",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

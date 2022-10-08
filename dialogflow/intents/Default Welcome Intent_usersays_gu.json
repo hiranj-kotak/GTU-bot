@@ -1,0 +1,54 @@
+[
+  {
+    "id": "669c604b-e031-4150-b1a8-af29ab4cd06a",
+    "data": [
+      {
+        "text": "કેમ છો!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "gu",
+    "updated": 0
+  },
+  {
+    "id": "46f0b75d-b5d8-4ab7-8d8f-ce417f8897a1",
+    "data": [
+      {
+        "text": "શુભ દિવસ!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "gu",
+    "updated": 0
+  },
+  {
+    "id": "1b64e279-1ee8-4ca2-9dc4-4dee2983d4c9",
+    "data": [
+      {
+        "text": "નમસ્કાર!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "gu",
+    "updated": 0
+  },
+  {
+    "id": "48f29167-653f-4742-b5fa-e7c252e96fd1",
+    "data": [
+      {
+        "text": "હાય!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "gu",
+    "updated": 0
+  }
+]

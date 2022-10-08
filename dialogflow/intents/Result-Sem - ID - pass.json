@@ -1,0 +1,81 @@
+{
+  "id": "6f7b0cfe-8830-4f6d-9f44-78b3eacd092f",
+  "parentId": "12e5a54e-33d4-4924-bd33-04937a0a6957",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Result-Sem - ID - pass",
+  "auto": true,
+  "contexts": [
+    "awaiting_id",
+    "Result-Sem-ID-followup",
+    "awaiting_sem"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom.Exam-custom.Result-custom.Result-Sem-custom.Result-Sem-ID-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0f4150b9-cbf5-4429-a2fe-e84af2e9b683",
+          "name": "password",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$password",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d6917b8c-449f-43f5-89a0-bcc5c3809840",
+          "name": "ID",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "#awaiting_id.ID",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "72e09192-5d1d-4650-b0b0-756286c36a2f",
+          "name": "sem",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "#awaiting_sem.sem",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
