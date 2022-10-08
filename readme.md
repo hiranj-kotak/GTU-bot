@@ -39,12 +39,11 @@ When a user first launches our Telegram bot by typing "/start," he or she will b
 
 ## Tools and technologies
 
-Programming Language: Python
-Dialogflow : dialogflow is an NLU(Natural Language Understanding ) platform provided by Google which is used to design and integrate a conversational user interface into your mobile app, web application, device, bot, interactive voice response system, and so on.
-Flask : Flask is the microframework written in Python. which is widely used in industries for backend and creating RESTful API.
-Telegram : Telegram is a globally accessible freemium, cross-platform, cloud-based instant messaging (IM) service, it also provides the opensource API to create bots.
-Firebase : Firebase is a BaaS(Backend as a Service) platform developed by Google which provides the services such as Authentication, Storage, Database etc.
-MongoDB: MongoDB is an open-source document database and leading NoSQL database. MongoDB is a highly scalable and performance-oriented database.
+#### Programming Language: Python
+#### Dialogflow : dialogflow is an NLU(Natural Language Understanding ) platform provided by Google which is used to design and integrate a conversational user interface into your mobile app, web application, device, bot, interactive voice response system, and so on.
+#### Flask : Flask is the microframework written in Python. which is widely used in industries for backend and creating RESTful API.
+#### Telegram : Telegram is a globally accessible freemium, cross-platform, cloud-based instant messaging (IM) service, it also provides the opensource API to create bots.
+#### MongoDB: MongoDB is an open-source document database and leading NoSQL database. MongoDB is a highly scalable and performance-oriented database.
 
 ## Challenges:
 
