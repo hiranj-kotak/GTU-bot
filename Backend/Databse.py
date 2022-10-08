@@ -1,10 +1,12 @@
 import pymongo
+from Academic_Calender import get_url
+from Alert import find_fail,find_fee
 client = pymongo.MongoClient("mongodb+srv://Hit:abc@cluster.qcrpjef.mongodb.net/test")
 db = client['PID616']
 student_collection = db['student_data']
 user_collection=db['user_data']
 
-user_collection.insert_one({"usrename":"hit"})
+# user_collection.insert_one({"usrename":"hit"})
 def student_insert(data):
     student_collection.insert_one(data);
 
@@ -12,16 +14,24 @@ def Search(data):
 
     return "hi"
 def user_insert(data):
-    print(data)
-    data1=data['queryResult']['action']
-    ID = data["queryResult"]["parameters"]["ID"]
+    # print(data)
+    data1 = data['queryResult']['action']
+    print(data1)
     ans=""
-    if(data1=="Studentcorner.Studentcorner-custom.Exam-custom.Result-custom.Result-Sem-custom"):
-        print("if")
+    if(data1=="Studentcorner.Studentcorner-custom.Exam-custom.Result-custom.Result-Sem-custom.Result-Sem-ID-custom"):
+        ID = data["queryResult"]["parameters"]["ID"]
+        Pas = data["queryResult"]["parameters"]["password"]
+        ID=str(int(ID))
+        print(ID)
+        print(Pas)
         sem=data["queryResult"]["outputContexts"][0]['parameters']["sem.original"]
         # print(sem)
         try:
-            student=student_collection.find_one({"Enrolment id":ID}, {"result": 1,"_id": 0})
+            student=student_collection.find_one({"Enrolment id":ID}, {"result": 1,"password":1,"_id": 0})
+            rpas=student["password"]
+            if(rpas!=Pas):
+                ans += "your password was incorrect"
+                return ans
             print(student)
         except:
             ans = '' + "Dada base System ma nathi"
@@ -47,9 +57,18 @@ def user_insert(data):
                 ans+=student[key]+"\n"
         # print(ans)
         return ans
-    elif(data1=="Studentcorner.Studentcorner-custom-2.Academics-custom.Attendence-custom"):
+    elif(data1=="Studentcorner.Studentcorner-custom-2.Academics-custom.Attendence-custom.ID-custom"):
+        ID = data["queryResult"]["parameters"]["ID"]
+        pas = data["queryResult"]["parameters"]["password"]
+        ID=str(int(ID))
+        print(ID)
+        print(pas)
         try:
-            student = student_collection.find_one({"Enrolment id": ID}, {"attendence": 1, "_id": 0})
+            student = student_collection.find_one({"Enrolment id": ID}, {"attendence": 1,"password":1,"_id": 0})
+            rpas=student["password"]
+            if(rpas!=pas):
+                ans += "your password was incorrect"
+                return ans
         except:
             ans = '' + "Dada base System ma nathi"
             return ans
@@ -70,37 +89,96 @@ def user_insert(data):
                 ans += student[key] + "\n"
         # print(ans)
         return ans
-    elif(data1=="Studentcorner.Studentcorner-custom-3.Fees-custom.Fees-Sem-custom"):
+    elif(data1=="Studentcorner.Studentcorner-custom-3.Fees-custom.Fees-Sem-custom.Fees-Sem-ID-custom"):
+        ID = data["queryResult"]["parameters"]["ID"]
+        pas = data["queryResult"]["parameters"]["password"]
+        ID=str(int(ID))
+        # print(ID)
+        # print(pas)
         sem=data["queryResult"]["outputContexts"][0]['parameters']["sem"]
-        print(sem)
+        # print(sem)
+        student={}
         try:
-            student = student_collection.find_one({"Enrolment id": ID}, {"fees": 1, "_id": 0})
-            # print(student)
+            student = student_collection.find_one({"Enrolment id": ID}, {"fees": 1,"password":1, "_id": 0})
+            rpass=student["password"]
+            print(rpass)
+            print(student)
+            if (student == None):
+                ans = '' + "Data not found"
+                return ans
         except:
             ans = '' + "Dada base System ma nathi"
             return ans
-        if (student == None):
-            ans = '' + "Dada base System ma nathi"
+
+        if(rpass==pas):
+            # print(student["fees"])
+            student=student["fees"][sem]
+            print(student)
+            for key in student:
+                ans+=key + ":"+student[key]+"\n"
             return ans
-        print(student["fees"])
-        student=student["fees"][sem]
-        print(student)
-        for key in student:
-            ans+=key + ":"+student[key]+"\n"
+        else:
+            ans+="your password was incorrect"
+            return ans
+    elif(data1=="Studentcorner.Studentcorner-custom-2.Academics-custom"):
+        ans=get_url()
+        print("ans= \n"+ans)
+        if (ans == None):
+            ans = '' + "Data not found"
+            return ans
         return ans
+
+    elif(data1=="Register.Register-custom.registergtuid-custom"):
+        # print(data)
+        ID=data["queryResult"]["parameters"]["ID"]
+        pas=data["queryResult"]["parameters"]["Password"]
+        ID = str(int(ID))
+        # print(ID)
+
+        chatID=data["originalDetectIntentRequest"]["payload"]["data"]["chat"]["id"]
+        ID=str(int(ID))
+        user={
+            "GTU_ID":ID,
+            "ChatID":chatID,
+            "Password":pas
+        }
+        print(user)
+        u=user_collection.find_one({"GTU_ID":ID})
+        if(u==None):
+            user_collection.insert_one(user)
+            ans += "You Are Registered in Database"
+            return ans
+        else:
+            ans += "You can not register Twice"
+            return ans
+        # print(user)
+        # print(ans)
+
+    # print()
+    # print(data1)
+    elif(data1=="Atkt"):
+
+        x=data['queryResult']["parameters"]["text"]
+        # y =data['from']['ID']
+        print(x)
+        find_fail(x)
+        return "hii"
+        # find_fail(x)
+    elif(data1=="Pending.fee"):
+        # print("feeeeeee")
+        message=data["queryResult"]["parameters"]["text"]
+        find_fee(message)
     else:
         ans=''+"Dada base System ma nathi"
         return ans
 
 
-
-
-
-# user_insert({'responseId': '7391b890-7dc8-440f-b4d2-0fa4a52338a8-d3dc5474', 'queryResult': {'queryText': '21it068', 'action': 'Studentcorner.Studentcorner-custom.Exam-custom.Result-custom.Result-Sem-custom', 'parameters': {'ID': '21it068'}, 'allRequiredParamsPresent': True, 'fulfillmentMessages': [{'text': {'text': ['']}}], 'outputContexts': [{'name': 'projects/gtu-kjqk/agent/sessions/17daf4b3-a0a2-3f84-ad14-ded2256a7687/contexts/result-followup', 'parameters': {'sem': 1.0, 'sem.original': '1', 'ID': '21it068', 'ID.original': '21it068'}}, {'name': 'projects/gtu-kjqk/agent/sessions/17daf4b3-a0a2-3f84-ad14-ded2256a7687/contexts/result-sem-followup', 'lifespanCount': 1, 'parameters': {'sem': 1.0, 'sem.original': '1', 'ID': '21it068', 'ID.original': '21it068'}}, {'name': 'projects/gtu-kjqk/agent/sessions/17daf4b3-a0a2-3f84-ad14-ded2256a7687/contexts/__system_counters__', 'parameters': {'no-input': 0.0, 'no-match': 0.0, 'ID': '21it068', 'ID.original': '21it068'}}], 'intent': {'name': 'projects/gtu-kjqk/agent/intents/12e5a54e-33d4-4924-bd33-04937a0a6957', 'displayName': 'Result-Sem - ID'}, 'intentDetectionConfidence': 1.0, 'languageCode': 'en'}, 'originalDetectIntentRequest': {'source': 'telegram', 'payload': {'data': {'date': '1665156262', 'chat': {'id': '2084389374', 'type': 'private'}, 'from': {'first_name': 'Kotak Hiranj', 'id': '2084389374', 'username': 'kotakhiranj', 'language_code': 'en'}, 'text': '21it068', 'message_id': '1297'}}}, 'session': 'projects/gtu-kjqk/agent/sessions/17daf4b3-a0a2-3f84-ad14-ded2256a7687'})
-# # user_insert(data)
-# # ({"instituteName": data["instituteName"]}, {"_id": 0})
-
-# safe_string = urllib.quote_plus('string_of_characters_like_these:$#@=?%^Q^$')
-
-
-
+# print(
+# user_insert(
+#
+# {'responseId': 'da3328ab-fd64-4c79-baa2-a3ee0a5c47cf-d3dc5474', 'queryResult': {'queryText': '/kt dhandhama dhyan aapo', 'action': 'Atkt', 'parameters': {'text': 'dhandhama dhyan aapo'}, 'allRequiredParamsPresent': True, 'fulfillmentText': 'hello', 'fulfillmentMessages': [{'text': {'text': ['hello']}}], 'outputContexts': [{'name': 'projects/gtu-kjqk/agent/sessions/98eab328-d16a-3c53-92f1-973fdda71654/contexts/__system_counters__', 'parameters': {'no-input': 0.0, 'no-match': 0.0, 'text': 'dhandhama dhyan aapo', 'text.original': 'dhandhama dhyan aapo'}}], 'intent': {'name': 'projects/gtu-kjqk/agent/intents/d8f889e3-bcb9-4c24-9453-448bde176a63', 'displayName': 'ATKT'}, 'intentDetectionConfidence': 0.71786344, 'languageCode': 'en'}, 'originalDetectIntentRequest': {'source': 'telegram', 'payload': {'data': {'entities': [{'type': 'bot_command', 'length': 3.0}], 'text': '/kt dhandhama dhyan aapo', 'message_id': '4721', 'from': {'username': 'HitKoladiya', 'last_name': 'Koladiya', 'language_code': 'en', 'first_name': 'Hit', 'id': '1106613031'}, 'date': '1665212568', 'chat': {'type': 'private', 'id': '1106613031'}}}}, 'session': 'projects/gtu-kjqk/agent/sessions/98eab328-d16a-3c53-92f1-973fdda71654'}
+# )
+# )
+# user_insert(data)
+# user_insert(data)#
+# ({"instituteName": data["instituteName"]}, {"_id": 0})
