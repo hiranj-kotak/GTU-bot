@@ -4,11 +4,11 @@
 
 ## Team:
 
-## Leader:
+### Leader:
 
 1. Kotak Hiranj Maheshbhai
 
-## Members:
+### Members:
 
 1. Mav Rinkal Dhanesh
 2. Keraliya Jay Ashvinbhai
