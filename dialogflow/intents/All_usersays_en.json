@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1133a0b8-b28f-4f7b-89c8-8c94b3601010",
+    "data": [
+      {
+        "text": "/all ",
+        "userDefined": false
+      },
+      {
+        "text": "text",
+        "meta": "@sys.any",
+        "alias": "text",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

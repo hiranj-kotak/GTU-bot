@@ -1,0 +1,92 @@
+{
+  "id": "0a83b636-4179-49c9-9846-6462d60ce47e",
+  "parentId": "dc57babb-7703-47c2-b4de-0f2304b95d80",
+  "rootParentId": "dc57babb-7703-47c2-b4de-0f2304b95d80",
+  "name": "Recruitment",
+  "auto": true,
+  "contexts": [
+    "QuickLink-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "QuickLink.QuickLink-custom-2",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "text": "January 2022",
+                      "url": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/Advertisement_JRF%20positions%20at%20SAST-GTU_735527.pdf"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "February 2022",
+                      "url": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/Notification%20No.%20282022_335483.pdf"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "March 2022",
+                      "url": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/NOTIFICATION%20NO.33.2022_798302.pdf"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/NOTIFICATION%20NO.43.2022_996217.pdf",
+                      "text": "April 2022"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/Notification-52-2022_357453.pdf",
+                      "text": "May 2022"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/NOTIFICATION%20NO.54.2022_619224.pdf",
+                      "text": "June 2022"
+                    }
+                  ]
+                ]
+              },
+              "text": "About gtu"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "6a6091d8-b152-4ecd-aa24-dc656d742aab",
+  "parentId": "ced80b5b-78ab-436b-8642-1ccf1cc3581e",
+  "rootParentId": "995e8245-3dec-4ff2-9b3c-058cc39d8e5b",
+  "name": "Diploma Pharmacy",
+  "auto": true,
+  "contexts": [
+    "ListofGTUAffiliatedColleges-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Aboutgtu.Aboutgtu-custom.ListofGTUAffiliatedColleges-custom-7",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "document": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/D.Pharm%20Intake%202021-22.pdf",
+              "text": "Diploma Pharmacy"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

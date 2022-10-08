@@ -1,0 +1,67 @@
+{
+  "id": "12e5a54e-33d4-4924-bd33-04937a0a6957",
+  "parentId": "2af4f954-17b6-40c2-8666-8f57acc266f3",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Result-Sem - ID",
+  "auto": true,
+  "contexts": [
+    "Result-Sem-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom.Exam-custom.Result-custom.Result-Sem-custom",
+      "affectedContexts": [
+        {
+          "name": "awaiting_id",
+          "lifespan": 5
+        },
+        {
+          "name": "Result-Sem-ID-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "15680764-caf4-43d3-91cd-7352247b206c",
+          "name": "ID",
+          "required": false,
+          "dataType": "@sys.number-integer",
+          "value": "$ID",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Enter password"
+          ],
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

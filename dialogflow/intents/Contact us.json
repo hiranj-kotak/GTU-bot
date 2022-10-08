@@ -1,0 +1,53 @@
+{
+  "id": "a51aaf3c-1058-4868-abf6-d48e543e55b9",
+  "name": "Contact us",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "\u003cb\u003eContact Phone:\u003c/b\u003e (079) 23267809 \n\n\u003cb\u003eE-mail:\u003c/b\u003e info@gtu.ac.in, registrar@gtu.ac.in \n\n \u003cb\u003eAddress:\u003c/b\u003e\n\n\u003ci\u003eChandkheda:\u003c/i\u003e Gujarat Technological University, Nr.Vishwakarma Government Engineering College, Nr.Visat Three Roads, Visat - Gandhinagar Highway, Chandkheda, Ahmedabad – 382424 - Gujarat\n\n\u003ci\u003eAhemdabad:\u003c/i\u003e Gujarat Technological University, Nr.Vishwakarma Government Engineering College, Nr.Visat Three Roads, Visat - Gandhinagar Highway, Chandkheda, Ahmedabad – 382424 - Gujarat\n\n\u003ci\u003eGandhinagar:\u003c/i\u003e Gujarat Technological University,  Gandhinagar Campus, Nr. Government Polytechnic K-6 Circle, E-4 Electronic Estate G.I.D.C, Sector - 26, Gandhinagar-382028- Gujarat",
+              "parse_mode": "html"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Contact Information"
+          ],
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

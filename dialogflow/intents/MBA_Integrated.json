@@ -1,0 +1,53 @@
+{
+  "id": "c31456e6-6e44-4644-be06-a150f68fffef",
+  "parentId": "ced80b5b-78ab-436b-8642-1ccf1cc3581e",
+  "rootParentId": "995e8245-3dec-4ff2-9b3c-058cc39d8e5b",
+  "name": "MBA_Integrated",
+  "auto": true,
+  "contexts": [
+    "ListofGTUAffiliatedColleges-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Aboutgtu.Aboutgtu-custom.ListofGTUAffiliatedColleges-custom-9",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "MBA_Integrated",
+              "document": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/MBA%20Integrated%202021-22.pdf"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

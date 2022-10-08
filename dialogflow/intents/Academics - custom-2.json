@@ -1,0 +1,36 @@
+{
+  "id": "6b04305a-9c4d-4e4b-a0d4-7f1167a82cff",
+  "parentId": "9a4d0879-b691-4cf1-a496-c1c563f8fd29",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Academics - custom-2",
+  "auto": true,
+  "contexts": [
+    "Academics-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom-2.Academics-custom-2",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,66 @@
+{
+  "id": "12bd0aa6-fa53-4897-a289-24366e19e377",
+  "parentId": "622aed06-7abb-4710-87f6-5a12a5603403",
+  "rootParentId": "abdb4d7b-c34b-456f-ba08-7f959cd3bfbe",
+  "name": "register gtu id - custom",
+  "auto": true,
+  "contexts": [
+    "registergtuid-followup",
+    "awaiting_id"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Register.Register-custom.registergtuid-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d1d5b913-4b18-4071-b390-07a9dbd12dc1",
+          "name": "Password",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$Password",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "ab5505a7-a399-41d9-9f9c-982940b700cd",
+          "name": "ID",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "#awaiting_id.ID",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "30ddd977-cff4-4e6c-9f80-52f1de409bbe",
+  "parentId": "a6619789-1976-4180-8a73-49592248a8b7",
+  "rootParentId": "a6619789-1976-4180-8a73-49592248a8b7",
+  "name": "Annual Report",
+  "auto": true,
+  "contexts": [
+    "Downloads-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Downloads.Downloads-custom",
+      "affectedContexts": [
+        {
+          "name": "AnnualReport-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "url": "http://gtusitecirculars.s3-ap-southeast-1.amazonaws.com/uploads/11th%20Convocation%20Annual%20Report%202022.pdf",
+                      "text": "2022"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "2021",
+                      "url": "https://gtusitecirculars.s3-ap-southeast-1.amazonaws.com/uploads/10th%20Convocation%20Annual%20Report-2021.pdf"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "http://gtusitecirculars.s3-ap-southeast-1.amazonaws.com/uploads/9th%20Convocation%20Annual%20Report%202020.pdf",
+                      "text": "2020"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "2019",
+                      "url": "http://gtusitecirculars.s3-ap-southeast-1.amazonaws.com/uploads/8th%20Convocation%20Annual%20Report%202019.pdf"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "https://gtusitecirculars.s3-ap-southeast-1.amazonaws.com/uploads/7th%20Convocation%20Report%202018.pdf",
+                      "text": "2018"
+                    }
+                  ]
+                ]
+              },
+              "text": "Select Year"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

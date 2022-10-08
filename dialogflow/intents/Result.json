@@ -1,0 +1,97 @@
+{
+  "id": "76c30372-f0d4-4aa5-919c-26b1d7497609",
+  "parentId": "619bdaa9-cbe9-41b7-b7e3-0ddb9dab7325",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Result",
+  "auto": true,
+  "contexts": [
+    "Exam-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom.Exam-custom",
+      "affectedContexts": [
+        {
+          "name": "Result-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "text": "Sem 1",
+                      "callback_data": "sem 1"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Sem 2",
+                      "text": "Sem 2"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Sem 3",
+                      "callback_data": "Sem 3"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Sem 4",
+                      "callback_data": "Sem 4"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Sem 5",
+                      "callback_data": "Sem 5"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Sem 6",
+                      "callback_data": "Sem 6"
+                    }
+                  ]
+                ]
+              },
+              "text": "Choose one item"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

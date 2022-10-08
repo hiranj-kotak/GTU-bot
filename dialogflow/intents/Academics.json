@@ -1,0 +1,79 @@
+{
+  "id": "9a4d0879-b691-4cf1-a496-c1c563f8fd29",
+  "parentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Academics",
+  "auto": true,
+  "contexts": [
+    "Studentcorner-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom-2",
+      "affectedContexts": [
+        {
+          "name": "Academics-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "text": "Time table",
+                      "callback_data": "Time table"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Attendence",
+                      "text": "Attendence"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Academic Calender",
+                      "callback_data": "Academic Calender"
+                    }
+                  ]
+                ]
+              },
+              "text": "Choose one item"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

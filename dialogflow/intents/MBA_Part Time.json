@@ -1,0 +1,61 @@
+{
+  "id": "c48d1cb2-d1d2-44ba-ab53-20331c73d384",
+  "parentId": "ced80b5b-78ab-436b-8642-1ccf1cc3581e",
+  "rootParentId": "995e8245-3dec-4ff2-9b3c-058cc39d8e5b",
+  "name": "MBA_Part Time",
+  "auto": true,
+  "contexts": [
+    "ListofGTUAffiliatedColleges-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Aboutgtu.Aboutgtu-custom.ListofGTUAffiliatedColleges-custom-12",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "document": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/MBA_Part%20Time_Intake%20_2021-22_270987.pdf",
+              "text": "MBA_Part Time"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {},
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

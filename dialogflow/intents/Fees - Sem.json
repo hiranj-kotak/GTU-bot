@@ -1,0 +1,76 @@
+{
+  "id": "3ef143b5-2ee2-4002-8a11-106159b47198",
+  "parentId": "15648a08-b1f0-4403-8281-865d6379de62",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Fees - Sem",
+  "auto": true,
+  "contexts": [
+    "Fees-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom-3.Fees-custom",
+      "affectedContexts": [
+        {
+          "name": "Fees-Sem-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "awaiting_sem",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "4ebcaa2f-3559-43a9-8f55-1b191dd5560e",
+          "name": "sem",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$sem",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Enter your ID"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,63 @@
+{
+  "id": "176c2d78-cfd0-451d-b079-439b8fec03c1",
+  "parentId": "3ef143b5-2ee2-4002-8a11-106159b47198",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Fees - Sem - ID",
+  "auto": true,
+  "contexts": [
+    "Fees-Sem-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom-3.Fees-custom.Fees-Sem-custom",
+      "affectedContexts": [
+        {
+          "name": "awaiting_id",
+          "lifespan": 5
+        },
+        {
+          "name": "Fees-Sem-ID-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "ddf0557d-8330-4a0f-84b4-502a63b89ef2",
+          "name": "ID",
+          "required": false,
+          "dataType": "@sys.number-integer",
+          "value": "$ID",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Enter password"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fabdbd0e-9fcc-4d3b-9ea4-3bbe9db7c69f",
+    "data": [
+      {
+        "text": "Sem1",
+        "meta": "@sys.any",
+        "alias": "sem",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

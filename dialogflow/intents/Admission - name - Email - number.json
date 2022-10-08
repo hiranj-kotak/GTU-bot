@@ -1,0 +1,66 @@
+{
+  "id": "d33b6838-a5de-42f4-b814-b942810c0213",
+  "parentId": "2f7fcaa8-a2bc-4c53-9a31-0bbdc3efe4dc",
+  "rootParentId": "f3110826-161f-4fb7-af6e-b421474ab480",
+  "name": "Admission - name - Email - number",
+  "auto": true,
+  "contexts": [
+    "Admission-name-Email-followup",
+    "awaiting_number",
+    "awaiting_name",
+    "awating_email"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Admission.Admission-custom.Admission-name-custom.Admission-name-Email-custom",
+      "affectedContexts": [
+        {
+          "name": "awaiting_name",
+          "lifespan": 5
+        },
+        {
+          "name": "awating_email",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "8b174d0c-75f9-4219-9deb-cdf945655fbc",
+          "name": "phone-number",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "value": "$phone-number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "#awaiting_name.name\n#awating_email.email\n$phone-number"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

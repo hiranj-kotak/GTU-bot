@@ -1,0 +1,58 @@
+{
+  "id": "57c2ee6e-9090-4831-86cc-0a5b61960b3f",
+  "parentId": "dd330fca-22e7-470e-96a1-9a37af76a1f3",
+  "rootParentId": "a6619789-1976-4180-8a73-49592248a8b7",
+  "name": "July",
+  "auto": true,
+  "contexts": [
+    "Newsletters-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Downloads.Downloads-custom.Newsletters-custom",
+      "affectedContexts": [
+        {
+          "name": "Newsletters-custom-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "July",
+              "document": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/Sarthak%20July%202022%20volume%208%20issue%203_457491.pdf"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

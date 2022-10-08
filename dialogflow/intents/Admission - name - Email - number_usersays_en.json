@@ -1,0 +1,17 @@
+[
+  {
+    "id": "5d4dea75-7a7b-488a-8963-4d401281ad5b",
+    "data": [
+      {
+        "text": "9426238811",
+        "meta": "@sys.phone-number",
+        "alias": "phone-number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

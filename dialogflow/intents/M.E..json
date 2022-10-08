@@ -1,0 +1,53 @@
+{
+  "id": "4d527c99-a4f5-4747-9d6c-531310760724",
+  "parentId": "ced80b5b-78ab-436b-8642-1ccf1cc3581e",
+  "rootParentId": "995e8245-3dec-4ff2-9b3c-058cc39d8e5b",
+  "name": "M.E.",
+  "auto": true,
+  "contexts": [
+    "ListofGTUAffiliatedColleges-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Aboutgtu.Aboutgtu-custom.ListofGTUAffiliatedColleges-custom-6",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "document": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/M.E.%20Intake%202021-22.pdf",
+              "text": "M.E."
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

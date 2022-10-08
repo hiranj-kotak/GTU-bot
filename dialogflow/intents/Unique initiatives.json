@@ -1,0 +1,86 @@
+{
+  "id": "e705a95c-8e8c-4655-8463-57d54411896c",
+  "parentId": "995e8245-3dec-4ff2-9b3c-058cc39d8e5b",
+  "rootParentId": "995e8245-3dec-4ff2-9b3c-058cc39d8e5b",
+  "name": "Unique initiatives",
+  "auto": true,
+  "contexts": [
+    "Aboutgtu-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Aboutgtu.Aboutgtu-custom-3",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Unique initiatives",
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "url": "http://www.vyojana.gtu.ac.in/",
+                      "text": "Vishwakarma Yojana"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Skill Development Center",
+                      "url": "http://www.skilldevelopmentcenter.gtu.ac.in/Default.aspx"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Swachh Bharat Abhiyan",
+                      "url": "https://www.gtu.ac.in/SBA.aspx"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "https://www.gtu.ac.in/GTU_100PointActivities/",
+                      "text": "100-Point Activities"
+                    }
+                  ],
+                  [
+                    {
+                      "url": "http://www.nss.gtu.ac.in/",
+                      "text": "National Service Scheme"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

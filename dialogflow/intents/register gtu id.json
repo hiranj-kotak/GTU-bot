@@ -1,0 +1,66 @@
+{
+  "id": "622aed06-7abb-4710-87f6-5a12a5603403",
+  "parentId": "abdb4d7b-c34b-456f-ba08-7f959cd3bfbe",
+  "rootParentId": "abdb4d7b-c34b-456f-ba08-7f959cd3bfbe",
+  "name": "register gtu id",
+  "auto": true,
+  "contexts": [
+    "Register-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Register.Register-custom",
+      "affectedContexts": [
+        {
+          "name": "registergtuid-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "awaiting_id",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "22cd192b-57c1-4970-a4f1-8a7ee4aa307c",
+          "name": "ID",
+          "required": false,
+          "dataType": "@sys.number-integer",
+          "value": "$ID",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Enter password"
+          ],
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,76 @@
+{
+  "id": "2af4f954-17b6-40c2-8666-8f57acc266f3",
+  "parentId": "76c30372-f0d4-4aa5-919c-26b1d7497609",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Result-Sem",
+  "auto": true,
+  "contexts": [
+    "Result-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom.Exam-custom.Result-custom",
+      "affectedContexts": [
+        {
+          "name": "Result-Sem-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "awaiting_sem",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "1da65563-b01d-4e64-ba16-ec35bbd830aa",
+          "name": "sem",
+          "required": false,
+          "dataType": "@sys.number-integer",
+          "value": "$sem",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Enter your GTU ID"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

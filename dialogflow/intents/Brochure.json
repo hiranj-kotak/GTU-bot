@@ -1,0 +1,53 @@
+{
+  "id": "a26984c5-bfce-4698-8fb7-ebee1e823423",
+  "parentId": "a6619789-1976-4180-8a73-49592248a8b7",
+  "rootParentId": "a6619789-1976-4180-8a73-49592248a8b7",
+  "name": "Brochure",
+  "auto": true,
+  "contexts": [
+    "Downloads-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Downloads.Downloads-custom-2",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "document": "https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/4_GTU%20New%20Brochure_226333.pdf",
+              "text": "Brochure"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

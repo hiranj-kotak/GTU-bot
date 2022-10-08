@@ -1,0 +1,73 @@
+{
+  "id": "619bdaa9-cbe9-41b7-b7e3-0ddb9dab7325",
+  "parentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Exam",
+  "auto": true,
+  "contexts": [
+    "Studentcorner-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom",
+      "affectedContexts": [
+        {
+          "name": "Exam-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "callback_data": "Result",
+                      "text": "Result"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Old question paper",
+                      "text": "Old question paper"
+                    }
+                  ]
+                ]
+              },
+              "text": "Choose one item"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

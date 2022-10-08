@@ -1,0 +1,86 @@
+{
+  "id": "dc57babb-7703-47c2-b4de-0f2304b95d80",
+  "name": "Quick Link",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "QuickLink-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "platform": "telegram",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "links will be provided here"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "text": "Recruitment",
+                      "callback_data": "Recruitment"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Holiday Lists",
+                      "callback_data": "Holiday Lists"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Important Websites",
+                      "callback_data": "Important Websites"
+                    }
+                  ]
+                ]
+              },
+              "text": "Quick Link"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

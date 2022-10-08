@@ -1,0 +1,109 @@
+{
+  "id": "15648a08-b1f0-4403-8281-865d6379de62",
+  "parentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "rootParentId": "b0d4b757-827d-41ae-bbaf-3094cb53383f",
+  "name": "Fees",
+  "auto": true,
+  "contexts": [
+    "Studentcorner-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Studentcorner.Studentcorner-custom-3",
+      "affectedContexts": [
+        {
+          "name": "Fees-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Choose one item",
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "callback_data": "sem1",
+                      "text": "Sem1"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Sem2",
+                      "callback_data": "sem2"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "sem3",
+                      "callback_data": "Sem3"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Sem4",
+                      "text": "sem4"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Sem5",
+                      "callback_data": "sem5"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "sem6",
+                      "callback_data": "Sem6"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "Sem7",
+                      "text": "sem7"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "sem8",
+                      "text": "Sem8"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

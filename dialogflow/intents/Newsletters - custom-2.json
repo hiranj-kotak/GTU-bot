@@ -1,0 +1,36 @@
+{
+  "id": "fbbdb801-2752-42b8-814a-d51d6aaaf9d8",
+  "parentId": "dd330fca-22e7-470e-96a1-9a37af76a1f3",
+  "rootParentId": "a6619789-1976-4180-8a73-49592248a8b7",
+  "name": "Newsletters - custom-2",
+  "auto": true,
+  "contexts": [
+    "Newsletters-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Downloads.Downloads-custom.Newsletters-custom-2",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

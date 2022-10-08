@@ -1,0 +1,79 @@
+{
+  "id": "dd330fca-22e7-470e-96a1-9a37af76a1f3",
+  "parentId": "a6619789-1976-4180-8a73-49592248a8b7",
+  "rootParentId": "a6619789-1976-4180-8a73-49592248a8b7",
+  "name": "Newsletters",
+  "auto": true,
+  "contexts": [
+    "Downloads-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Downloads.Downloads-custom",
+      "affectedContexts": [
+        {
+          "name": "Newsletters-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "4",
+          "platform": "telegram",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Select Newsletter",
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "callback_data": "July",
+                      "text": "Sarthak July 2022 "
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Sarthak April 2022",
+                      "callback_data": "April"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "January",
+                      "text": "Sarthak January 2022"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

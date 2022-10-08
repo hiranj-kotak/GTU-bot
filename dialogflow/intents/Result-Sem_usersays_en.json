@@ -1,0 +1,21 @@
+[
+  {
+    "id": "de014679-6f20-436c-8d60-f5c1cec365f7",
+    "data": [
+      {
+        "text": "sem ",
+        "userDefined": false
+      },
+      {
+        "text": "1",
+        "meta": "@sys.number-integer",
+        "alias": "sem",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

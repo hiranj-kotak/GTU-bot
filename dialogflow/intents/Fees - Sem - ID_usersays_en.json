@@ -1,0 +1,17 @@
+[
+  {
+    "id": "307686be-26a2-4cba-977c-2ea34e823b4d",
+    "data": [
+      {
+        "text": "1231513131",
+        "meta": "@sys.number-integer",
+        "alias": "ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ea8ce807-c817-4e96-a482-7eae22d0b1ad",
+    "data": [
+      {
+        "text": "11111111",
+        "meta": "@sys.number-integer",
+        "alias": "ID",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
